@@ -1,7 +1,6 @@
 # Copyright (c) 2025, nagi and Contributors
 # See license.txt
-
-# import frappe
+import frappe
 from frappe.tests import IntegrationTestCase, UnitTestCase
 
 
@@ -18,7 +17,14 @@ class UnitTestDriver(UnitTestCase):
 	Use this class for testing individual functions and methods.
 	"""
 
-	pass
+	def test_full_name_correctly_set(self):
+		test_driver=frappe.new_doc("Driver")
+		test_driver.first_name="Joun"
+		test_driver.last_name="Doe"
+		test_driver.license_number="JUdff"
+		test_driver.save()
+
+		self.assertEqual(test_driver.full_name, "Joun Doe" )
 
 
 class IntegrationTestDriver(IntegrationTestCase):
