@@ -1,7 +1,7 @@
 app_name = "rentals"
 app_title = "Rentals"
 app_publisher = "nagi"
-app_description = "manage rentals"
+app_description = "manage rentals test"
 app_email = "anagii66@gmail.com"
 app_license = "mit"
 
