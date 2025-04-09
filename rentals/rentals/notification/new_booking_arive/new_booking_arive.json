@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2025-03-15 04:48:02.005193",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Booking",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here\n<a herf=\"http://irfan.cabs:8000\">click here to view</a>",
+ "message_type": "HTML",
+ "minutes_offset": 0,
+ "modified": "2025-03-15 04:48:02.005193",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "new booking arive",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.customer_name }} booked a vehicle"
+}
